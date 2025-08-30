@@ -7,10 +7,10 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "build": "expo export -p web --output-dir dist",
+    "build": "node build.js",
     "build:android": "expo build:android",
     "build:ios": "expo build:ios",
-    "build:web": "expo export -p web --output-dir dist",
+    "build:web": "expo build:web",
     "eject": "expo eject",
     "test": "echo \"No tests specified\" && exit 0",
     "lint": "echo \"No linting configured\" && exit 0"

@@ -26,7 +26,8 @@
     },
     "web": {
       "favicon": "./assets/task.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "name": "Task Manager"
     }
   }
 }
