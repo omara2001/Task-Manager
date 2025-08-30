@@ -201,40 +201,9 @@ npm run build:ios      # Build iOS IPA
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
+### Deployment on Vercel 
 
-The app is configured for easy deployment to Vercel:
-
-1. **Push to GitHub:**
-   ```bash
-   git add .
-   git commit -m "Deploy to Vercel"
-   git push origin master
-   ```
-
-2. **Deploy with Vercel CLI:**
-   ```bash
-   npm install -g vercel
-   vercel login
-   vercel
-   ```
-
-3. **Or use Vercel Dashboard:**
-   - Go to [vercel.com](https://vercel.com)
-   - Import your GitHub repository
-   - Deploy automatically
-
-**Configuration files included:**
-- `vercel.json` - Vercel deployment configuration
-- Build script configured for web export
-- Routing setup for SPA behavior
-
-For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
-
-### Other Deployment Options
-- **Netlify**: Use `npm run build` and deploy `dist` folder
-- **GitHub Pages**: Configure GitHub Actions workflow
-- **Firebase Hosting**: Use Firebase CLI deployment
+The task manager app is configured for easy deployment to Vercel:[Task-Manager](https://task-manager-blond-one.vercel.app/)
 
 ## 🌟 Advanced Features
 
