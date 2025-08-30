@@ -192,11 +192,49 @@ npm run ios        # Run on iOS simulator
 npm run android    # Run on Android emulator
 npm run web        # Run in web browser
 
-# Building (requires Expo account)
+# Building & Deployment
+npm run build      # Build for web deployment (Vercel/Netlify)
+npm run build:web  # Build for web deployment
 npm run build:android  # Build Android APK
 npm run build:ios      # Build iOS IPA
-npm run build:web      # Build for web deployment
 ```
+
+## 🚀 Deployment
+
+### Deploy to Vercel (Recommended)
+
+The app is configured for easy deployment to Vercel:
+
+1. **Push to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Deploy to Vercel"
+   git push origin master
+   ```
+
+2. **Deploy with Vercel CLI:**
+   ```bash
+   npm install -g vercel
+   vercel login
+   vercel
+   ```
+
+3. **Or use Vercel Dashboard:**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Deploy automatically
+
+**Configuration files included:**
+- `vercel.json` - Vercel deployment configuration
+- Build script configured for web export
+- Routing setup for SPA behavior
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+### Other Deployment Options
+- **Netlify**: Use `npm run build` and deploy `dist` folder
+- **GitHub Pages**: Configure GitHub Actions workflow
+- **Firebase Hosting**: Use Firebase CLI deployment
 
 ## 🌟 Advanced Features
 
